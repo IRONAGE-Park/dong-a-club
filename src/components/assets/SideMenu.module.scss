@@ -1,0 +1,25 @@
+@import '../../styles/Root.scss';
+
+.sidebar {
+    width: 280px;
+    height: 100%;
+    padding-top: 60px;
+    background-color: #fff;
+    .list {
+        width: 100%;
+        font-size: $desktop20px;
+        border-top: solid 1px #999;
+        border-bottom: solid 1px #999;
+        .item {
+            width: 100%; height: 48px;
+            justify-content: flex-start;
+            padding: 8px 16px;
+        }
+    }
+}
+
+.item {
+    & + & {
+        border-top: solid 1px #ccc;
+    }
+}
