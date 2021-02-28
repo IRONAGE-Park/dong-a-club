@@ -8,6 +8,7 @@
         .title {
             text-align: center;
             line-height: 1.8;
+            padding-top: 30px;
             .logo {
                 width: 150px; height: 150px;
             }
@@ -49,9 +50,9 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .logo {
-        animation: logo-spin infinite 20s linear;
-    }
+    // .logo {
+    //     animation: logo-spin infinite 20s linear;
+    // }
 }
 
 @keyframes logo-spin {
