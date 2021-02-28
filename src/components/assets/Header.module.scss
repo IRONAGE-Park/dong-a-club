@@ -2,5 +2,18 @@
 
 .header {
     .header-icon {
+        width: 40px; height: 40px;
+        svg {
+            font-size: 3rem;
+            fill: #fff;
+        }
+    }
+    .title {
+        padding-left: 16px;
+        .link {
+            font-size: $desktop20px;
+            color: #fff;
+            text-decoration: none;
+        }
     }
 }
