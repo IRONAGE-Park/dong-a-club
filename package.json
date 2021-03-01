@@ -83,7 +83,7 @@
         "workbox-webpack-plugin": "4.3.1"
     },
     "scripts": {
-        "run": "pm2 start dist/server.js --name dong-a-club",
+        "run": "PORT=80 pm2 start dist/server.js --name dong-a-club",
         "reload": "pm2 reload all",
         "stop": "pm2 stop dong-a-club",
         "delete": "pm2 delete dong-a-club",
