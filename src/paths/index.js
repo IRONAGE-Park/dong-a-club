@@ -1,5 +1,6 @@
 export const Paths = {
     index: '/',
     mbti: '/mbti',
-    info: '/info',
+    division: '/division',
+    club: '/club'
 };

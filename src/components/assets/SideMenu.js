@@ -11,7 +11,7 @@ const SideMenu = () => {
         <nav className={styles['sidebar']}>
             <ul className={styles['list']}>
                 <ButtonBase onClick={() => history.push(Paths.mbti)} component="li" className={styles['item']}>동아리 MBTI</ButtonBase>
-                <ButtonBase onClick={() => history.push(Paths.info)} component="li" className={styles['item']}>분과 정보</ButtonBase>
+                <ButtonBase onClick={() => history.push(Paths.division)} component="li" className={styles['item']}>분과 정보</ButtonBase>
             </ul>
         </nav>
     );

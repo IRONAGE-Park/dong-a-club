@@ -21,7 +21,7 @@ const MainContainer = () => {
                     <ButtonBase className={styles['button']} onClick={() => history.push(Paths.mbti)}>
                         MBTI 시작하기
                     </ButtonBase>
-                    <ButtonBase className={styles['button']} onClick={() => history.push(Paths.info)}>
+                    <ButtonBase className={styles['button']} onClick={() => history.push(Paths.division)}>
                         분과 정보 보기
                     </ButtonBase>
                 </div>

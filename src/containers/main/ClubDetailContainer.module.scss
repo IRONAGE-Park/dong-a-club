@@ -1,0 +1,44 @@
+@import '../../styles/Root.scss';
+
+
+.container {
+    @include container;
+    background-color: #ebebeb;
+    .banner {
+        width: 100%;
+    }
+    .content {
+        margin-top: 16px;
+        background-color: #fff;
+        padding: 16px;
+        .title {
+            font-size: $desktop32px;
+            border-bottom: solid 2px #222;
+            color: #222;
+        }
+        .intro {
+            margin-top: 16px;
+            font-size: $desktop18px;
+            line-height: 1.5;
+            color: #555;
+            word-break: keep-all;
+        }
+        .none {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; height: 120px;
+            font-size: $desktop22px;
+            color: #aaa;
+        }
+        .contact {
+            margin-top: 32px;
+            font-size: $desktop16px;
+            color: #999;
+        }
+        .address {
+            margin-top: 16px;
+            font-size: $desktop24px;
+        }
+    }
+}

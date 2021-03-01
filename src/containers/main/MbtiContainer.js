@@ -1,10 +1,13 @@
 import { ButtonBase } from '@material-ui/core';
 import React, { useCallback, useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { requestDivisionList } from '../../api/division';
+import { Paths } from '../../paths';
 
 import styles from './MbtiContainer.module.scss';
 
 const MbtiContainer = () => {
+    const history = useHistory();
     const [divisions, setDivisions] = useState([]);
     const callGetDivisionList = useCallback(async () => {
         try {
@@ -26,11 +29,11 @@ const MbtiContainer = () => {
             </div>
             <div className={styles['content']}>
                 {divisions.map(division =>
-                <div className={styles['button-area']}>
-                    <ButtonBase className={styles['button']}>
+                <div key={division.id} className={styles['button-area']}>
+                    <ButtonBase className={styles['button']} onClick={() => history.push(Paths.mbti + '/' + division.id)}>
                         <div className={styles['body']}>
                             {division.icon}
-                            <p className={styles['name']}>{division.name.ko}</p>
+                            <p className={styles['name']}>{division.name}</p>
                         </div>
                     </ButtonBase>
                 </div>)}

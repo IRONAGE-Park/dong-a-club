@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 
-import { Info, Main, Mbti, InfoDetail } from './pages';
+import {Main, Mbti, MbtiGame, DivisionDetail, Division, ClubDetail } from './pages';
 import DialogContainer from './containers/assets/DialogContainer';
 
 import Header from './components/assets/Header';
@@ -35,8 +35,10 @@ const App = () => {
                 <Switch>
                     <Route path={Paths.index} component={Main} exact />
                     <Route path={Paths.mbti} component={Mbti} exact />
-                    <Route path={Paths.info} component={Info} exact />
-                    <Route path={Paths.info + '/:id'} component={InfoDetail} exact />
+                    <Route path={Paths.mbti + '/:division_id/:level?'} component={MbtiGame} exact />
+                    <Route path={Paths.division} component={Division} exact />
+                    <Route path={Paths.division + '/:id'} component={DivisionDetail} exact />
+                    <Route path={Paths.club + '/:id'} component={ClubDetail} exact />
                 </Switch>
             </Sidebar>
             <DialogContainer />
