@@ -47,8 +47,8 @@ const algorithm = [
                 case 'travel-many-regulary': return {
                     question: '분석 결과 두 가지 동아리가 발견되었습니다.',
                     actions: [
-                        { type: 'end', name: '유스호스텔', action: 10 },
-                        { type: 'end', name: '신서유기', action: 7 },
+                        { type: 'end', name: '유스호스텔', action: 7 },
+                        { type: 'end', name: '신서유기', action: 10 },
                     ]
                 }
                 default: return null;
@@ -80,8 +80,21 @@ const algorithm = [
                 case 'inlanguage': return {
                     question: '어느 분야에 더 관심이 있으신가요?',
                     actions: [
-                        { type: 'talking', name: '토론 및 스피치', action: 12 },
+                        { type: 'talking', name: '토론 및 스피치', action: 'next' },
                         { type: 'lecture', name: '강사초청공연, 강연 주최', action: 14 },
+                    ]
+                };
+                default: return null;
+            }
+        },
+        state => {
+            // LEVEL 1
+            switch (state) {
+                case 'inlanguage-talking': return {
+                    question: '어느 분야에 더 관심이 있으신가요?',
+                    actions: [
+                        { type: 'end', name: '성아회', action: 12 },
+                        { type: 'end', name: '유네스코', action: 15 },
                     ]
                 };
                 default: return null;
@@ -225,7 +238,7 @@ const algorithm = [
                 case 'irregular': return {
                     question: '분석 결과 네 가지 동아리가 발견되었습니다.',
                     actions: [
-                        { type: 'end', name: 'MBA', action: 46 },
+                        { type: 'end', name: 'MRA', action: 46 },
                         { type: 'end', name: 'PTP', action: 48 },
                         { type: 'end', name: '한울', action: 43 },
                         { type: 'end', name: '내쇼날', action: 40 },
@@ -238,7 +251,7 @@ const algorithm = [
             // LEVEL 2
             switch (state) {
                 case 'regulary-institution': return {
-                    question: '분석 결과 두 가지 동아리가 발견되었습니다.',
+                    question: '분석 결과 네 가지 동아리가 발견되었습니다.',
                     actions: [
                         { type: 'end', name: '호우회', action: 44 },
                         { type: 'end', name: 'Make A Wish', action: 47 },
@@ -247,7 +260,7 @@ const algorithm = [
                     ]
                 };
                 case 'regulary-personal': return {
-                    question: '분석 결과 네 가지 동아리가 발견되었습니다.',
+                    question: '분석 결과 세 가지 동아리가 발견되었습니다.',
                     actions: [
                         { type: 'end', name: '흙사랑', action: 45 },
                         { type: 'end', name: '상앗대', action: 42 },
