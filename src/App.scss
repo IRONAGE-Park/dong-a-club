@@ -3,7 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", 나눔고딕, "NanumGothic", "맑은 고딕", "Malgun Gothic", Ngothic, sans-serif;
+    font-family: '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', 나눔고딕,
+        'NanumGothic', '맑은 고딕', 'Malgun Gothic', Ngothic, sans-serif;
     box-sizing: border-box;
     list-style: none;
 }
@@ -13,13 +14,15 @@ body {
     font-size: $root-font-size-desktop;
 }
 @include tablet {
-    html, body {
+    html,
+    body {
         font-size: $root-font-size-tablet;
     }
 }
 
 @include mobile {
-    html, body {
+    html,
+    body {
         font-size: $root-font-size-mobile;
     }
 }
@@ -38,4 +41,13 @@ select {
 
 .App {
     background-color: #dbdbdb;
+}
+
+.home-transition-enter {
+    opacity: 0;
+}
+
+.home-transition-enter-active {
+    opacity: 1;
+    transition: all 0.25s ease-in-out;
 }

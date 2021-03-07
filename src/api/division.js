@@ -9,7 +9,7 @@ const division = [
     { id: 5, name: '봉사', leader: { name: '박강덕', phone: '010-3331-7305' }, icon: <SupervisorAccount />, intro: '다양한 사람들과 만남을 통한 많은 인연과 다양한 봉사활동을 통해 자신의 능력을 키워 스스로 성장할 수 있는 분과' },
     { id: 6, name: '종교', leader: { name: '강은혁', phone: '010-5044-1712' }, icon: <NaturePeople />, intro: '나와 같은 종교인을 만나 신학 공부, 종교 활동을 하며 다양한 활동을 하는 분과' },
     { id: 7, name: '체육', leader: { name: '문승진', phone: '010-4034-8484' }, icon: <SportsHandball />, intro: '구기종목 이외에도 레저스포츠 등 폭 넓고 다양한 체육활동을 통해 몸과 마음을 단련할 수 있는 분과' },
-    { id: 8, name: '동문', leader: { name: '배지민', phone: '010-8224-1567' }, icon: <School />, intro: '고등학교부터 대학교까지 인연을 계속 이어나갈 수 있는 분과(동아삼성, 대동남성, 배정혜화)' },
+    { id: 8, name: '동문', leader: { name: '배지민', phone: '010-8224-1567' }, icon: <School />, intro: '고등학교부터 대학교까지 인연을 계속 이어나갈 수 있는 분과(동아삼성, 대동남성)' },
 ];
 
 

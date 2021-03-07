@@ -31,22 +31,36 @@ function createPage(root, stateScript) {
     <html lang="kr">
         <head>
             <meta charset="UTF-8" />
-            <link rel="icon" href="/favicon.ico" />
-            <meta name="theme-color" content="#000000" />
+            <meta name="theme-color" content="#bc9e3c" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-            <meta name="description" content="description" />
-            <meta name="Author" content="Author" />
-            <meta name="Keywords" content="Keypad" />
-            <meta name="Subject" content="Subject" />
-            <meta property="og:type" content="website" />
-            <meta property="og:title" content="react-express" />
-            <meta property="og:description" content="description" />
-            <link rel="apple-touch-icon" href="/logo192.png" />
+            <meta name="description" content="동아대학교, 동연회, 동아리 연합회" />
+            <meta name="Author" content="동아대학교, 동연회, 동아리 연합회" />
+            <meta name="Keywords" content="동아대학교, 동연회, 동아리 연합회" />
+            <meta name="Subject" content="동아대학교, 동연회, 동아리 연합회" />
+            <meta property="og:type" content="동아리 MBTI" />
+            <meta property="og:title" content="동아리 MBTI" />
+            <meta property="og:description" content="동아대학교, 동연회, 동아리 연합회" />
+            <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+            <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/apple-icon-57x57.png">
+            <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/apple-icon-60x60.png">
+            <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/apple-icon-72x72.png">
+            <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/apple-icon-76x76.png">
+            <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/apple-icon-114x114.png">
+            <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/apple-icon-120x120.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/apple-icon-144x144.png">
+            <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/apple-icon-152x152.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-icon-180x180.png">
+            <link rel="icon" type="image/png" sizes="192x192"  href="%PUBLIC_URL%/android-icon-192x192.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/favicon-96x96.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
+            <meta name="msapplication-TileColor" content="#bc9e3c">
+            <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
             
-            <link rel="manifest" href="/manifest.json" />
+            <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-            <title>React / Express</title>
+            <title>동아리 MBTI :: 동아대학교 동아리 연합회</title>
             <link href="${manifest.files['main.css']}" rel="stylesheet" />
         </head>
         <body>
@@ -149,7 +163,7 @@ app.use(function (err, req, res, next) {
 });
 
 const http = require('http');
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '80');
 app.set('port', port);
 
 const server = http.createServer(app);

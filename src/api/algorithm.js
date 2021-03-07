@@ -45,7 +45,7 @@ const algorithm = [
             // LEVEL 3
             switch (state) {
                 case 'travel-many-regulary': return {
-                    question: '분석 결과 두 가지 동아리가 발견되었습니다.',
+                    question: 'result',
                     actions: [
                         { type: 'end', name: '유스호스텔', action: 7 },
                         { type: 'end', name: '신서유기', action: 10 },
@@ -94,7 +94,7 @@ const algorithm = [
                     question: '어느 분야에 더 관심이 있으신가요?',
                     actions: [
                         { type: 'end', name: '성아회', action: 12 },
-                        { type: 'end', name: '유네스코', action: 15 },
+                        { type: 'end', name: '유네스코', action: 16 },
                     ]
                 };
                 default: return null;
@@ -126,7 +126,7 @@ const algorithm = [
                     ]
                 };
                 case 'movie': return {
-                    question: '분석 결과 두 가지 동아리가 발견되었습니다.',
+                    question: 'result',
                     actions: [
                         { type: 'end', name: '팝콘', action: 23 },
                         { type: 'end', name: '영화예술연구회(DACA)', action: 24 },
@@ -139,7 +139,7 @@ const algorithm = [
             // LEVEL 2
             switch (state) {
                 case 'art-paint': return {
-                    question: '분석 결과 두 가지 동아리가 발견되었습니다.',
+                    question: 'result',
                     actions: [
                         { type: 'end', name: 'BOA', action: 20 },
                         { type: 'end', name: '열린 그림 마당', action: 18 },
@@ -186,14 +186,14 @@ const algorithm = [
             // LEVEL 2
             switch (state) {
                 case 'active-dance': return {
-                    question: '분석 결과 두 가지 동아리가 발견되었습니다.',
+                    question: 'result',
                     actions: [
                         { type: 'end', name: '가리온', action: 33 },
                         { type: 'end', name: '프릭스', action: 28 },
                     ]
                 };
                 case 'music-guitar': return {
-                    question: '분석 결과 네 가지 동아리가 발견되었습니다.',
+                    question: 'result',
                     actions: [
                         { type: 'end', name: 'FGC', action: 31 },
                         { type: 'end', name: '노래의 메아리', action: 36 },
@@ -202,7 +202,7 @@ const algorithm = [
                     ]
                 };
                 case 'music-no_guitar': return {
-                    question: '분석 결과 세 가지 동아리가 발견되었습니다.',
+                    question: 'result',
                     actions: [
                         { type: 'end', name: '코마', action: 26 },
                         { type: 'end', name: '스트리츠', action: 25 },
@@ -236,7 +236,7 @@ const algorithm = [
                     ]
                 };
                 case 'irregular': return {
-                    question: '분석 결과 네 가지 동아리가 발견되었습니다.',
+                    question: 'result',
                     actions: [
                         { type: 'end', name: 'MRA', action: 46 },
                         { type: 'end', name: 'PTP', action: 48 },
@@ -251,19 +251,19 @@ const algorithm = [
             // LEVEL 2
             switch (state) {
                 case 'regulary-institution': return {
-                    question: '분석 결과 네 가지 동아리가 발견되었습니다.',
+                    question: 'result',
                     actions: [
                         { type: 'end', name: '호우회', action: 44 },
                         { type: 'end', name: 'Make A Wish', action: 47 },
-                        { type: 'end', name: '가온 로타랙트', action: 31 },
+                        { type: 'end', name: '가온 로타랙트', action: 41 },
                         { type: 'end', name: 'RCY', action: 49 },
+                        { type: 'end', name: '상앗대', action: 42 },
                     ]
                 };
                 case 'regulary-personal': return {
-                    question: '분석 결과 세 가지 동아리가 발견되었습니다.',
+                    question: 'result',
                     actions: [
                         { type: 'end', name: '흙사랑', action: 45 },
-                        { type: 'end', name: '상앗대', action: 42 },
                         { type: 'end', name: '나눔', action: 39 },
                     ]
                 };
@@ -288,7 +288,7 @@ const algorithm = [
             // LEVEL 1
             switch (state) {
                 case 'protestantism': return {
-                    question: '분석 결과 여섯 가지 동아리가 발견되었습니다.',
+                    question: 'result',
                     actions: [
                         { type: 'end', name: 'YWAM', action: 51 },
                         { type: 'end', name: 'IVF', action: 52 },
@@ -391,14 +391,14 @@ const algorithm = [
                     ]
                 };
                 case 'ball-no_racket-soccer': return {
-                    question: '분석 결과 두 가지 동아리가 발견되었습니다.',
+                    question: 'result',
                     actions: [
                         { type: 'end', name: 'COPA', action: 58 },
                         { type: 'end', name: '다울', action: 67 },
                     ]
                 };
                 case 'ball-no_racket-basketball': return {
-                    question: '분석 결과 두 가지 동아리가 발견되었습니다.',
+                    question: 'result',
                     actions: [
                         { type: 'end', name: 'DUBA', action: 62 },
                         { type: 'end', name: 'WAY', action: 68 },
