@@ -41,4 +41,11 @@
             font-size: $desktop24px;
         }
     }
+    .description {
+        padding: 16px;
+        font-size: $desktop14px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: #aaa;
+    }
 }

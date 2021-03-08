@@ -9,7 +9,7 @@ const algorithm = [
                     { type: 'travel', name: '여행', action: 'next' },
                     { type: 'star', name: '별 관측', action: 9 },
                     { type: 'hacking', name: '컴퓨터 해킹', action: 4 },
-                    { type: 'drink', name: '음료 시음 및 제작', action: 3 },
+                    { type: 'drink', name: '음료 시음 및 제작', action: 'next' },
                     { type: 'car', name: '자동차', action: 6 },
                     { type: 'cf', name: '광고', action: 8 },
                 ]
@@ -23,6 +23,13 @@ const algorithm = [
                     actions: [
                         { type: 'many', name: '네', action: 'next'},
                         { type: 'few', name: '아니요', action: 1 },
+                    ]
+                };
+                case 'drink': return {
+                    question: 'result',
+                    actions: [
+                        { type: 'end', name: '커피헤븐', action: 3},
+                        { type: 'end', name: '다연회', action: 5 },
                     ]
                 };
                 default: return null;
@@ -91,7 +98,7 @@ const algorithm = [
             // LEVEL 1
             switch (state) {
                 case 'inlanguage-talking': return {
-                    question: '어느 분야에 더 관심이 있으신가요?',
+                    question: 'result',
                     actions: [
                         { type: 'end', name: '성아회', action: 12 },
                         { type: 'end', name: '유네스코', action: 16 },

@@ -70,7 +70,7 @@ const clubs = [
     { id: 63, division_id: 7, address: '102', leader: { name: '박지성', phone: '010-6722-9323' }, name: '동아사이클', attribute: [], image: 'cycle.jpg', intro: '동아사이클 / 정기 라이딩을 가고 방학때 자전거여행을 갑니다. 자전거에 관심이 있으면 누구나 환영합니다' },
     { id: 64, division_id: 7, address: '621', leader: { name: '정종필', phone: '010-8912-3304' }, name: '동아탁구회', attribute: [], image: 'pingpong.jpeg', intro: '혼자서도 스포츠를 즐기고 싶다면다른 부산권 학교들과 교류하고싶다면공강시간에 편하게 올 수 있는곳이 필요하다면저희 동아탁구회로 오세요~~' },
     { id: 65, division_id: 7, address: '532', leader: { name: '김소진', phone: '010-6458-6673' }, name: '테티스', attribute: [], intro: '테티스는 윈드서핑을 주로 하는 동아리 입니다.' },
-    { id: 66, division_id: 7, address: '530', leader: { name: '윤순환', phone: '010-5019-5625' }, name: '동아수영회', attribute: [], image: 'swim.jpg', intro: '저희는 대학생들의 신앙생활과 친목도모를 지원하여 신앙생활에 보탬이 되어 드립니다.' },
+    { id: 66, division_id: 7, address: '530', leader: { name: '윤순환', phone: '010-5019-5625' }, name: '동아수영회', attribute: [], image: 'swim.jpg', intro: '동아수영회는 물이 있는 곳이라면 어디든 수영할 수 있게 되어 내 몸도 지키고, 재미도 얻어 갈 수 있습니다' },
     { id: 67, division_id: 7, address: '612', leader: { name: '이정희', phone: '010-9283-8375' }, name: '다울', attribute: [], image: 'daul1.jpeg', intro: '동아대학교 유일한 여자 축구 동아리‘DAU-L’<br/>축구를 좋아하고 사랑하는 여학우 선수들의 모임! 체육 전공이 아니더라도 축구가 처음이라도 축구를 좋아하는 마음만 있다면 누구든지 참여 가능!' },
     { id: 68, division_id: 7, address: '411', leader: { name: '김태훈', phone: '010-2221-2540' }, name: 'WAY', attribute: [], intro: 'WAY는 농구를 주로 하는 동아리입니다.' },
     { id: 69, division_id: 7, address: '520', leader: { name: '유승빈', phone: '010-8805-2147' }, name: '동아테니스', attribute: [], image: 'tenis.jpg', intro: '동아테니스는 장비걱정 없이 공용 라켓이 구비되어 있으며, 한번도 테니스를 경험해 본적 없어도,평일 정기레슨을 통해실력향상!편안한 맘으로 놀러오세요!!!' },
