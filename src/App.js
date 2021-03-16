@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Route, Switch, useLocation } from 'react-router-dom';
+import { HashRouter, Switch, Route, useLocation } from 'react-router-dom';
+// import CacheRoute, { CacheSwitch } from 'react-router-cache-route';
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 import {
@@ -9,6 +10,7 @@ import {
     DivisionDetail,
     Division,
     ClubDetail,
+    Club,
 } from './pages';
 import DialogContainer from './containers/assets/DialogContainer';
 
@@ -49,12 +51,23 @@ const App = () => {
                         classNames="home-transition"
                         timeout={250}
                     >
+                        {/* <HashRouter>
+                            <CacheSwitch location={location}>
+                                <CacheRoute path={Paths.index} component={Main} exact />
+                                <CacheRoute path={Paths.mbti} component={Mbti} exact />
+                                <CacheRoute path={Paths.mbti + '/:division_id/:level?'} component={MbtiGame} exact />
+                                <CacheRoute path={Paths.division} component={Division} exact />
+                                <CacheRoute path={Paths.division + '/:id'} component={DivisionDetail} exact />
+                                <CacheRoute path={Paths.club + '/:id'} component={ClubDetail} exact />
+                            </CacheSwitch>
+                        </HashRouter> */}
                         <Switch location={location}>
                             <Route path={Paths.index} component={Main} exact />
                             <Route path={Paths.mbti} component={Mbti} exact />
                             <Route path={Paths.mbti + '/:division_id/:level?'} component={MbtiGame} exact />
                             <Route path={Paths.division} component={Division} exact />
                             <Route path={Paths.division + '/:id'} component={DivisionDetail} exact />
+                            <Route path={Paths.club} component={Club} exact />
                             <Route path={Paths.club + '/:id'} component={ClubDetail} exact />
                         </Switch>
                     </CSSTransition>

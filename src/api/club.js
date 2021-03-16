@@ -24,7 +24,7 @@ const clubs = [
     { id: 21, division_id: 3, address: '603', leader: { name: '박진우', phone: '010-5180-8756' }, name: '사진예술연구회', attribute: [], image: 'picture_culture.jpg', intro: '사진을 사랑하는 사람들이 모여 함께 공부하고 출사를 나가며 소중한 추억을 쌓는 동아리입니다' },
     { id: 22, division_id: 3, address: '410', leader: { name: '김강산', phone: '010-5223-6407' }, name: 'Game Crew', attribute: [], image: 'game_crew.jpeg', intro: '동아대 이스포츠&게임 동아리 GameCrew⭐️ 같이 게임할 사람! 큐손실 나기전에 고!' },
     { id: 23, division_id: 3, address: '412', leader: { name: '송영현', phone: '010-4445-1743' }, name: '팝콘', attribute: [], image: 'popcon.png', intro: '팝콘은 영화를 기획, 제작함 학기당 한번 자신이 만든 영화를 상영하는 영화제를 함.' },
-    { id: 24, division_id: 3, address: '510', leader: { name: '임수현', phone: '010-9544-2742' }, name: '영화예술연구회(DACA)', attribute: [], image:'daca.jpg', intro: '영화관람 동아리로 매달 문화의 날 단체 영화관람 및 뒷풀이와 소소한 토론으로 재미를 더해요! 동방에 있는 보드게임은 덤!' },
+    { id: 24, division_id: 3, address: '510', leader: { name: '홍승현', phone: '010-2497-6070' }, name: '영화예술연구회(DACA)', attribute: [], image:'daca.jpg', intro: '영화관람 동아리로 매달 문화의 날 단체 영화관람 및 뒷풀이와 소소한 토론으로 재미를 더해요! 동방에 있는 보드게임은 덤!' },
     // 문예 1
     { id: 25, division_id: 4, address: '613', leader: { name: '김보미', phone: '010-2345-8027' }, name: '스트리츠', attribute: [], image: 'streets.png', intro: '동아대 최대규모 밴드 스트리츠! 락, 어쿠스틱, 밴드, 버스킹 등 폭넓은 장르를 다룹니다!' },
     { id: 26, division_id: 4, address: '622', leader: { name: '배인희', phone: '010-2345-1267' }, name: '코마', attribute: [], image: 'coma.jpg', intro: '동아대학교 락밴드 동아리 코마입니다! 악기가 서툴어도 열정만 가지고 있다면 누구든지 환영입니다:)' },
